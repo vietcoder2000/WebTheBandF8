@@ -1,0 +1,92 @@
+    @media(min-width:64em) {
+        .header .search-button .menu-icon {
+            display: none;
+        }
+    }
+    
+    @media(max-width:63.9375em) {
+        .btn {
+            padding: 15px 16px;
+        }
+        .input-form .text-form {
+            padding: 15px;
+        }
+        .footer .social-list a {
+            font-size: 42px;
+            margin: 0 8px;
+        }
+        .footer .coppyright a {
+            padding: 12px 0;
+        }
+        .heading-form-contact .heading-contact {
+            line-height: 2;
+        }
+    }
+    
+    @media (min-width:46.25em) and (max-width:63.9375em) {
+        .container .container-content {
+            padding: auto 16px;
+        }
+        .header .search-button .menu-icon {
+            display: none;
+        }
+    }
+    
+    @media(max-width:46.1875em) {
+        .s-full-width {
+            width: 100%;
+        }
+        .nav {
+            display: block;
+        }
+        .nav .nav-item:first-child {
+            display: inline-block;
+        }
+        .nav .nav-item {
+            display: block;
+        }
+        .nav .subnav {
+            position: initial;
+            background: #222;
+        }
+        .nav .subnav a {
+            color: #fff;
+            padding: 4px 32px;
+        }
+        .header {
+            overflow: hidden;
+        }
+        .header .search-button .search-icon {
+            display: none;
+        }
+        .header .search-button .menu-icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .container .member-item {
+            width: 100%;
+            margin-top: 30px;
+        }
+        .container .member-item .member-img {
+            width: 60%;
+        }
+        .place-content .place-item {
+            width: 100%;
+        }
+        .place-content .place-item:nth-child(2) {
+            margin: 16px 0;
+        }
+        .heading-form-contact-mobile,
+        .col-text,
+        .col {
+            width: 100%;
+        }
+        .input-form .col2,
+        .input-form .col1 {
+            padding: 0;
+        }
+        .col {
+            margin-top: 48px
+        }
+    }

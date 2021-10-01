@@ -1,0 +1,500 @@
+/* 
+1. vị trí
+2. kích thước 
+3. hình dáng 
+4. màu sắc
+*/
+
+
+/* common */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.col-three {
+    float: left;
+    width: calc(100%/3);
+}
+
+.col-two {
+    float: left;
+    width: calc(100%/2);
+}
+
+.col-full {
+    width: 100%;
+}
+
+
+/* main */
+
+.header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.nav {
+    line-height: 46px;
+    display: inline-block;
+}
+
+.nav .nav-item {
+    display: inline-block;
+    position: relative;
+}
+
+.nav>.nav-item:hover>a,
+.subnav .nav-item:hover a {
+    background-color: #ccc;
+    color: #000;
+}
+
+.nav .nav-item:hover .subnav {
+    display: block;
+}
+
+.nav>.nav-item>a {
+    color: #fff;
+}
+
+.nav .nav-item .caret-down {
+    font-size: 14px;
+    padding: 0 4px;
+}
+
+.nav>.nav-item>a {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 0 24px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    min-width: 160px;
+}
+
+.subnav .nav-item {
+    display: block;
+}
+
+.subnav a {
+    color: #000;
+    display: block;
+    line-height: 38px;
+    padding: 0 16px;
+    text-decoration: none;
+}
+
+.header .search-button {
+    float: right;
+}
+
+.header .search-button .search-icon,
+.header .search-button .menu-icon {
+    color: #fff;
+    line-height: 46px;
+    padding: 0 21px;
+    font-size: 14px;
+}
+
+.header .search-button:hover .menu-icon {
+    color: #000;
+    background-color: #ccc;
+}
+
+.header .search-button:hover .search-icon {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+.slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    position: relative;
+    background: url("../img/slider3.jpg")top center/ cover no-repeat;
+}
+
+.slider .text-content {
+    position: absolute;
+    bottom: 48px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.text-content .text-decoration {
+    text-shadow: 0 0 1px #000;
+}
+
+.slider .text-heading {
+    margin: 25px 0;
+}
+
+.container .container-content {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px 112px;
+}
+
+.container .container-content .heading-content {
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+
+.container .container-content .sub-heading-content {
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.container .container-content .sub-content {
+    text-align: justify;
+    line-height: 1.4;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.container .member {
+    margin-top: 32px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container .member-item .member-name {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.container .member-item .member-img {
+    border-radius: 4px;
+    width: 154px;
+}
+
+.bg-container {
+    background-color: #000;
+    overflow: hidden;
+}
+
+.bg-container .tickets-tour {
+    background-color: #fff;
+    margin-top: 40px;
+    list-style-type: none;
+}
+
+.bg-container .tickets-tour .ticket-item {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+
+.bg-container .tickets-tour .sold-out {
+    font-size: 15px;
+    background-color: #f44336;
+    padding: 3px 4px;
+    color: #fff;
+    margin-left: 16px;
+}
+
+.bg-container .tickets-tour .quantity {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    line-height: 24px;
+    text-align: center;
+    margin: -3px 16px 0 0;
+}
+
+.bg-container .place-content {
+    overflow: hidden;
+    margin: 32px -8px 0 -8px;
+}
+
+.bg-container .place-content .place-item {
+    padding: 0 8px;
+}
+
+.place-content .place-item .item-img {
+    display: block;
+    width: 100%;
+}
+
+.place-content .place-item .item-img:hover {
+    opacity: 0.6;
+}
+
+.place-content .place-item .item-body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-content .place-item .item-name {
+    font-size: 15px;
+}
+
+.place-content .place-item .item-time {
+    margin-top: 15px;
+    opacity: 0.6;
+}
+
+.place-content .place-item .item-desc {
+    margin-top: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+
+/* .slider .text-decoration {} */
+
+.modal-tickets {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.js-open-modal {
+    display: flex;
+}
+
+.modal-tickets .modal-container {
+    max-width: 90%;
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    animation: fadein ease .4s;
+}
+
+.modal-header {
+    position: relative;
+}
+
+.modal-header .modal-header-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 16px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background-color: #009688;
+}
+
+.modal-header .modal-header-close:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-header .modal-header-content {
+    background-color: #009688;
+    height: 129px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+.modal-header .modal-header-content .name-modal-header {
+    letter-spacing: 4px;
+    margin-left: 16px;
+    font-weight: 100;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-pay {
+    width: 100%;
+    font-size: 15px;
+    padding: 16px;
+    background-color: #009688;
+    color: #fff;
+    border: none;
+}
+
+.modal-pay:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-body input {
+    display: block;
+    margin: 12px 0 16px 0;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+label {
+    font-size: 15px;
+}
+
+.modal-footer {
+    float: right;
+    margin: 0 16px 16px 0;
+}
+
+.modal-footer a {
+    text-decoration: none;
+    color: #2196f3;
+}
+
+.modal-footer span {
+    font-size: 15px;
+}
+
+@keyframes fadein {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.form-contact {
+    overflow: hidden;
+    margin: 47px -8px 0 -8px;
+}
+
+.form-contact .heading-form-contact {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.heading-form-contact .heading-contact {
+    line-height: 1.5;
+}
+
+.heading-contact a {
+    color: #0287a8;
+}
+
+.heading-contact a:hover {
+    color: #0287a8;
+    opacity: 0.8;
+}
+
+.heading-form-contact .icon-contact {
+    margin-right: 15px;
+}
+
+.input-form {
+    overflow: hidden;
+}
+
+.input-form .text-form {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.input-form .col1 {
+    padding-right: 8px;
+}
+
+.input-form .col2 {
+    padding-left: 8px;
+}
+
+.submit-form {
+    float: right;
+    margin: 16px 0;
+    text-transform: uppercase;
+}
+
+input.text-form {
+    margin-top: 8px;
+}
+
+.map-footer img {
+    width: 100%;
+}
+
+.footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.footer .social-list a {
+    font-size: 24px;
+    color: #000;
+    opacity: 0.6;
+}
+
+.footer .social-list a:hover,
+.footer .coppyright a:hover {
+    opacity: 1;
+}
+
+.footer .coppyright {
+    font-size: 15px;
+    padding: 15px 0;
+    color: #000;
+    opacity: 0.6;
+}
+
+.footer .coppyright a {
+    color: #000;
+    opacity: 0.6;
+}
